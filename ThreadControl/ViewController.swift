@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
       threadControl.rawThread?.cancel()
     }
   }
-
+  
   @objc func threadFunc(_ object: Any?) {
     let message = object as? String ?? ""
     print("\(Thread.current.name ?? "") message=\(message)")

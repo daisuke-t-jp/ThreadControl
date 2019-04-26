@@ -39,13 +39,13 @@ public class ThreadControl {
     }
     
     let threadArgument = ThreadArgument(target: target,
-                      selector: selector,
-                      rawArgument: argument,
-                      loopTimeInterval: loopTimeInterval)
+                                        selector: selector,
+                                        rawArgument: argument,
+                                        loopTimeInterval: loopTimeInterval)
     
     rawThread = Thread.init(target: self,
-                selector: threadEntey,
-                object: threadArgument)
+                            selector: threadEntey,
+                            object: threadArgument)
   }
   
   /// Initialize for One-Shot
